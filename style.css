@@ -1,0 +1,45 @@
+body {
+    background-color: #000000;
+    color: #9797AB;
+    font-family: monospace;
+    font-weight: 500;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: xx-large;
+    font-family:'Segoe UI';
+}
+
+h2 {
+    color: #FFFFFF;
+    font-weight: 650;
+    font-size: x-large;
+    font-family:'Segoe UI';
+}
+
+h3 {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: large;
+    font-family:'Segoe UI';
+}
+
+h4 {
+    color: #FFFFFF;
+    font-weight: 550;
+    font-size: medium;
+}
+
+a {
+    color: #0092EF;
+    text-decoration: underline;
+}
+
+div.emphasis {
+    background-color: #0092EF;
+    color: #FFFFFF;
+    width: 25vw;
+    left: 0px;
+}
