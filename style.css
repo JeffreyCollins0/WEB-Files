@@ -1,34 +1,41 @@
 body {
     background-color: #000000;
-    color: #9797AB;
+    color: #9A9ABC;
     font-family: monospace;
     font-weight: 500;
 }
 
 h1 {
     color: #FFFFFF;
-    font-weight: 700;
-    font-size: xx-large;
-    font-family:'Segoe UI';
+    font-weight: 800;
+    font-size:xx-large;
+    font-family:'Source Sans Pro';
 }
-
 h2 {
     color: #FFFFFF;
-    font-weight: 650;
+    font-weight: 800;
     font-size: x-large;
-    font-family:'Segoe UI';
+    font-family:'Source Sans Pro';
 }
-
 h3 {
     color: #FFFFFF;
-    font-weight: 600;
-    font-size: large;
-    font-family:'Segoe UI';
+    font-weight: 800;
+    font-size: larger;
+    font-family:'Source Sans Pro';
 }
-
 h4 {
     color: #FFFFFF;
-    font-weight: 550;
+    font-weight: 800;
+    font-size: large;
+}
+h5 {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: medium;
+}
+h6 {
+    color: #FFFFFF;
+    font-weight: 800;
     font-size: medium;
 }
 
@@ -36,10 +43,78 @@ a {
     color: #0092EF;
     text-decoration: underline;
 }
-
-div.emphasis {
-    background-color: #0092EF;
+a:hover {
     color: #FFFFFF;
-    width: 25vw;
-    left: 0px;
+}
+a:active {
+    color: #003287;
+}
+
+button{
+    border: 0px;
+    font-family: monospace;
+    font-size: large;
+    font-weight: 600;
+    padding: 0.5vw;
+    margin-left: 1.16vw;
+    margin-right: 1.16vw;
+    background-color: #003287;
+    color: #FFFFFF;
+    width: max-content;
+    height: auto;
+}
+button:hover{
+    background-color: #0092EF;
+}
+button:active{
+    background-color: #9A9ABC;
+}
+
+input {
+    border: 0px;
+    font-family: monospace;
+    font-size: large;
+    font-weight: 600;
+    padding: 0.5vw;
+    background-color: #9A9ABC;
+    color: #000000;
+    width: max-content;
+    height: auto;
+}
+::placeholder {
+    font-family: monospace;
+    font-size: large;
+    font-weight: 600;
+    color: #000000;
+}
+
+hr {
+    border-top: 0.5vw solid #0092EF;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.bevel-container {
+    position: relative;
+    width: max-content;
+    height: auto;
+    margin-left: 1.15vw;
+    margin-right: 1.16vw;
+}
+.left-deco{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    left: -1.18vw;
+    bottom: 0;
+    top: 0;
+}
+.right-deco{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    right: -1.17vw;
+    bottom: 0;
+    top: 0;
 }
