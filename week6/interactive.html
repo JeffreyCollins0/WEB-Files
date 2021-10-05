@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello Me</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <h1>JS TEST PAGE</h1>
+        <p></p>
+        <hr>
+        <a href="../week2/index.html">Encyclopedia page</a><br>
+        <br>
+        <button class="bevel-container" id="section1_button">
+            <img src="../Assets/Triangle_up_darkblue.svg" class="bevel left-deco" height="36" alt=""> Section 1 <img src="../Assets/Triangle_down_darkblue.svg" class="bevel right-deco" height="36" alt="">
+        </button>
+        <section id="section1_container">
+            <!-- info on -->
+            <h2>Section 1 - Some information for your consideration</h2>
+            <p>The original aesthetic design for the site's CSS was planned to use orange for contrast, but the plan fell through and now here we are.</p>
+            <button class="bevel-container" id="hr_button">
+                <img src="../Assets/Triangle_up_darkblue.svg" class="bevel left-deco" height="36" alt=""> Swap to orange <img src="../Assets/Triangle_down_darkblue.svg" class="bevel right-deco" height="36" alt="">
+            </button>
+        </section>
+        <br>
+        <button class="bevel-container" id="section2_button">
+            <img src="../Assets/Triangle_up_darkblue.svg" class="bevel left-deco" height="36" alt=""> Section 2 <img src="../Assets/Triangle_down_darkblue.svg" class="bevel right-deco" height="36" alt="">
+        </button>
+        <section id="section2_container">
+            <!-- sample text -->
+            <h2>Section 2 - Sample Text</h2>
+            <p>Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text</p>
+        </section>
+
+        <hr>
+
+        <script src="./interact.js"></script>
+        <script>
+            // pre-collapse sections
+            collapse_section("section1_container");
+            collapse_section("section2_container");
+            // add event listeners
+            document.getElementById("section1_button").addEventListener("click", function(){ collapse_section("section1_container"); });
+            document.getElementById("section2_button").addEventListener("click", function(){ collapse_section("section2_container"); });
+            var hr_flag = true;
+            document.getElementById("hr_button").addEventListener("click", function(){ 
+                // swap colors of hr lines
+                var elements = document.getElementsByTagName("hr");
+                if(hr_flag){
+                    // change to orange
+                    hr_flag = false;
+                    for(var i=0; i<elements.length; i++){
+                        elements[i].style.borderTop = "0.5vw solid #FFA615";
+                    }
+                }else{
+                    // change to blue
+                    hr_flag = true;
+                    for(var i=0; i<elements.length; i++){
+                        elements[i].style.borderTop = "0.5vw solid #0092EF";
+                    }
+                }
+             });
+        </script>
+    </body>
+</html>
