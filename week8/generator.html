@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Interactive Sections</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <!-- edit to table settings for use in displaying the results -->
+        <style>
+            td{
+                padding: 0.5vw;
+                margin: 1vw;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Location and object generator</h1>
+        <p>This allows for the random generation of locations and objects to use as inspiration for storytelling or RPGs.</p>
+        <hr>
+        <br>
+        <button class="bevel-container" id="location_button">
+            <img src="../Assets/Triangle_up_darkblue.svg" class="bevel left-deco" height="36" alt=""> Generate location <img src="../Assets/Triangle_down_darkblue.svg" class="bevel right-deco" height="36" alt="">
+        </button>
+        <section id="location-result">
+            <p>Generated the following location:</p>
+            <table>
+                <tr>
+                    <td id="location-mod1"></td>
+                    <td id="location-mod2"></td>
+                    <td id="location-base"></td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <button class="bevel-container" id="object_button">
+            <img src="../Assets/Triangle_up_darkblue.svg" class="bevel left-deco" height="36" alt=""> Generate object <img src="../Assets/Triangle_down_darkblue.svg" class="bevel right-deco" height="36" alt="">
+        </button>
+        <section id="object-result">
+            <p>Generated the following object:</p>
+            <table>
+                <tr>
+                    <td id="object-mod1"></td>
+                    <td id="object-mod2"></td>
+                    <td id="object-base"></td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <hr>
+
+        <script src="./generator.js"></script>
+        <script>
+            // add event listeners
+            document.getElementById("location_button").addEventListener("click", function(){ generate_content("location-mod1", "location-mod2", "location-base", false); });
+            document.getElementById("object_button").addEventListener("click", function(){ generate_content("object-mod1", "object-mod2", "object-base", true); });
+        </script>
+    </body>
+</html>
