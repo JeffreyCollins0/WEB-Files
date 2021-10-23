@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Game</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./gameStyles.css">
+    </head>
+    <body>
+        <!-- title section -->
+        <section id="title">
+        <h1>JS Game: Wireframe implementation</h1>
+        </section>
+
+        <div id="site-body">
+
+            <!-- high score list -->
+            <div id="score-list">
+                <h2>Leaderboard</h2>
+                <div class="bevel-container bevel-content score-entry"> <img src="../Assets/Triangle_up_lightblue.svg" class="bevel left-deco" height="36" alt=""> 
+                    000000
+                <img src="../Assets/Triangle_down_lightblue.svg" class="bevel right-deco" height="36" alt=""> </div>
+
+                <div class="bevel-container bevel-content score-entry"> <img src="../Assets/Triangle_up_lightblue.svg" class="bevel left-deco" height="36" alt=""> 
+                    000000
+                <img src="../Assets/Triangle_down_lightblue.svg" class="bevel right-deco" height="36" alt=""> </div>
+
+                <div class="bevel-container bevel-content score-entry"> <img src="../Assets/Triangle_up_lightblue.svg" class="bevel left-deco" height="36" alt=""> 
+                    000000
+                <img src="../Assets/Triangle_down_lightblue.svg" class="bevel right-deco" height="36" alt=""> </div>
+            </div>
+
+            <!-- game view (keep aspect ratio) -->
+            <div id="game-container">
+                <!-- contains UI assets and border -->
+                <div id="game-view">
+                    <div id="score-counter-cont" class="bevel-container bevel-content"> 
+                        <!-- counts current score -->
+                        <div id="score-counter"> 000000 </div>
+                    <img src="../Assets/Triangle_down_lightblue.svg" class="bevel right-deco" height="36" alt=""> </div>
+
+                    <div id="game-env">
+                        <!-- contains all game objects -->
+
+                        (game objects will spawn here)<br>
+                        <img id="player" src="./game-assets/Player.png" alt="" width="50" height="50">
+                        <img class="asteroid" src="./game-assets/Asteroid-0.png" alt="">
+                        <img class="asteroid-frag" src="./game-assets/Asteroid-frag-1.png" alt="" width="60" height="60">
+                        <img class="particle" src="./game-assets/Particle-dash.gif" alt="" width="60" height="60">
+
+                        <div id="game-menu">
+                            <!-- contains all menu options -->
+                            <h1>Dash Asteroids</h1>
+                            <button id="start-game" class="bevel-container"> <img src="../Assets/Triangle_up_darkblue.svg" class="bevel left-deco" height="36" alt=""> 
+                                Start game
+                            <img src="../Assets/Triangle_down_darkblue.svg" class="bevel right-deco" height="36" alt=""> </button>
+                        </div>
+
+                    </div>
+
+                    <div id="lives-counter-cont" class="bevel-container bevel-content"> <img src="../Assets/Triangle_up_lightblue.svg" class="bevel left-deco" height="36" alt=""> 
+                        <!-- counts current lives -->
+                        <div id="lives-counter"> Lives: ○ ○ ● </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- include game code -->
+        <script src="./gameCode.js"></script>
+        <script>
+            // scale UI box
+            scale_view("game-view", "game-container");
+            // add event listener
+            //document.getElementById("location_button").addEventListener("click", function(){ generate_content("location-mod1", "location-mod2", "location-base", false); });
+        </script>
+    </body>
+</html>

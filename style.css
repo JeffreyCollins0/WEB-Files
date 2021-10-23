@@ -118,3 +118,16 @@ hr {
     bottom: 0;
     top: 0;
 }
+.bevel-content {
+    border: 0px;
+    font-family: monospace;
+    font-size: large;
+    font-weight: 600;
+    padding: 0.5vw;
+    margin-left: 1.16vw;
+    margin-right: 1.16vw;
+    background-color: #0092EF;
+    color: #FFFFFF;
+    width: max-content;
+    height: auto;
+}
