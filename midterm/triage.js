@@ -101,6 +101,9 @@ function fillActivities(){
     for(var i=0; i<upper_bound; i++){
         result += '<div class="activity"> <p class="activity-title activity-field">'+options[i][0]+'</p> <p class="activity-field">'+options[i][1]+' min</p> <p class="activity-field">impact '+options[i][2]+'</p> </div>';
     }
+    if(options.length == 0){
+        result = 'No activities with these constraints';
+    }
     document.getElementById("activities-list").innerHTML = result;
 }
 
