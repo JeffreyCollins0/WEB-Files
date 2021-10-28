@@ -1,0 +1,116 @@
+div, button, section{
+    margin: 10px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #9A9ABC;
+    font-family: monospace;
+    font-weight: 500;
+}
+h1 {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size:xx-large;
+    font-family:'Source Sans Pro';
+}
+button{
+    border: 0px;
+    font-family: monospace;
+    font-size: large;
+    font-weight: 600;
+    padding: 0.5vw;
+    background-color: #000000;
+    color: #9A9ABC;
+}
+button:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+button.active{
+    background-color: #003287;
+    color: #FFFFFF;
+}
+
+.flex-list{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.flex-drawer{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.activity{
+    color: #9A9ABC;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    background-color: #000000;
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+    font-size: large;
+}
+.activity-title {
+    color: #FFFFFF;
+    font-family:'Source Sans Pro';
+}
+.activity-field {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#main-content{
+    flex-grow: 5;
+}
+#list-drawer{
+    flex-grow: 3;
+}
+#button-list{
+    background-color: #505060;
+}
+#activities-list{
+    flex-grow: 3;
+    background-color: #505060;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: large;
+    font-family:'Source Sans Pro';
+}
+#slider{
+    width: auto;
+    height: 4vh;
+    position: relative;
+    background-color: #505060;
+}
+#slider-fill{
+    height: 100%;
+    width: 0;
+    margin: 0;
+    background-color: #0092EF;
+}
+#indicator{
+    position: relative;
+    left: -18.5px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: large;
+    font-family:'Source Sans Pro';
+}
+#content-header{
+    padding: 20px;
+}

@@ -99,12 +99,13 @@ hr {
     position: relative;
     width: max-content;
     height: auto;
+    z-index: 0;
     margin-left: 1.15vw;
     margin-right: 1.16vw;
 }
 .left-deco{
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     height: 100%;
     left: -1.18vw;
     bottom: 0;
@@ -112,7 +113,7 @@ hr {
 }
 .right-deco{
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     height: 100%;
     right: -1.17vw;
     bottom: 0;
@@ -124,10 +125,9 @@ hr {
     font-size: large;
     font-weight: 600;
     padding: 0.5vw;
-    margin-left: 1.16vw;
-    margin-right: 1.16vw;
     background-color: #0092EF;
     color: #FFFFFF;
     width: max-content;
     height: auto;
+    position: relative;
 }
