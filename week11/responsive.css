@@ -3,6 +3,13 @@
 }
 .bevel-content{
     margin: 0;
+    background-color: #003287;
+}
+.bevel-content:hover{
+    background-color: #0092EF;
+}
+.bevel-content:active{
+    background-color: #9A9ABC;
 }
 
 @media screen and (min-width: 700px) {
