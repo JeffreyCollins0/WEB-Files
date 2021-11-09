@@ -1,0 +1,56 @@
+.bevel-container{
+    margin: 0.3rem;
+}
+.bevel-content{
+    margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .list_responsive{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 80vw;
+    }
+    .img_responsive{
+        overflow: hidden;
+        object-position: 50% 50%;
+        object-fit: contain;
+        height: 50vh;
+        width: max-content;
+        align-self: left;
+    }
+}
+@media screen and (max-width: 701px) {
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .list_responsive{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        margin: 8px;
+    }
+    .img_responsive{
+        overflow: hidden;
+        object-position: 50% 50%;
+        object-fit: contain;
+        width: 100%;
+        align-self: center;
+    }
+}
+
+#main_content{
+    padding: 8px;
+    margin: 0;
+}
