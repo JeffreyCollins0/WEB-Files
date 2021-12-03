@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./portfolio.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="nav_list_responsive">
+            <!-- Nav collapse button -->
+            <button id="nav_collapse" onclick="toggleMenu()"><img src="./image/PegasusLogoSVG.svg" height="42vh" alt=""></button>
+            <!-- Logo icon -->
+            <div class=" nav_item nav_item_selected">Home</div>
+            <a href="./gallery.html"><div class="nav_item">Gallery</div></a>
+            <a href="./games.html"><div class="nav_item">Games</div></a>
+            <a href="./about.html"><div class="nav_item">About</div></a>
+        </nav>
+        <!-- Page content -->
+        <div id="main_content" class="list_responsive">
+            <div class="banner">
+                <!-- [Hero image banner] -->
+                <div class="banner_img_container" id="hero">
+                    <!-- [Logo image] -->
+                    <img src="./image/Logotype_SVG.svg" id="logo_float"  height="64vh" alt="">
+                    <h1 class="banner_title" id="hero_text">Welcome.</h1>
+                    <img class="banner_img" id="hero_img" src="image/SnowBanner.png" alt="">
+                </div>
+            </div>
+            <div id="contents" class="list_responsive">
+                <p>
+                    I make video games and art, and this portfolio is a selection of my work.
+                </p>
+                <!-- Link banners -->
+                <a href="./gallery.html"><div class="banner">
+                    <!-- [Image banner] -->
+                    <div class="banner_img_container">
+                        <div class="banner_shadow"></div>
+                        <h2 class="banner_title">Gallery</h2>
+                        <img class="banner_img" src="image/PegasusRedo_2.jpg" alt="">
+                    </div>
+                </div></a>
+                <a href="./games.html"><div class="banner">
+                    <!-- [Image banner] -->
+                    <div class="banner_img_container">
+                        <div class="banner_shadow"></div>
+                        <h2 class="banner_title">Games</h2>
+                        <img class="banner_img" src="image/TriadDemo.gif" alt="">
+                    </div>
+                </div></a>
+                <a href="./about.html"><div class="banner">
+                    <h2>About</h2>
+                </div></a>
+            </div>
+        </div>
+        <script src="./nav.js"></script>
+    </body>
+</html>

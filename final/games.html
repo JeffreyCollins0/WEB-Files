@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Games</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./portfolio.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="nav_list_responsive">
+            <button id="nav_collapse" onclick="toggleMenu()"><img src="./image/PegasusLogoSVG.svg" height="42vh" alt=""></button>
+            <!-- Logo icon -->
+            <a href="./index.html"><div class="nav_item">Home</div></a>
+            <a href="./gallery.html"><div class="nav_item">Gallery</div></a>
+            <div class="nav_item nav_item_selected">Games</div>
+            <a href="./about.html"><div class="nav_item">About</div></a>
+        </nav>
+        <!-- Page content -->
+        <div id="main_content" class="list_responsive">
+            <h1 class="page_header"><img src="./image/GamesText.svg" height="50vh" alt="Games"></h1>
+            <div id="contents" class="list_responsive">
+                <div class="game_banner">
+                    <!-- [Hero image banner] -->
+                    <span style="height:30vh"></span>
+                    <div class="game_row_responsive">
+                        <div class="preview_gif_container">
+                            <img class="preview_gif" src="./image/TriadDemo.gif" alt="GIF Preview">
+                        </div>
+                        <div class="list_responsive">
+                            <h2>Triad Mysteries</h2>
+                            <p>
+                                A small, samurai-inspired pixel art game with a time-stopping mechanic. Supports both keyboard and gamepad input.
+                            </p>
+                            <a href="https://jeffreycollins0.itch.io/triad-mysteries"><button>View on Itch</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="game_banner">
+                    <!-- [Hero image banner] -->
+                    <span style="height:30vh"></span>
+                    <div class="game_row_responsive">
+                        <div class="preview_gif_container">
+                            <img class="preview_gif" src="./image/DashteroidsDemo.gif" alt="GIF Preview">
+                        </div>
+                        <div class="list_responsive">
+                            <h2>Dashteroids</h2>
+                            <p>
+                                Dash into asteroids in an arcade-style Asteroids variant, complete with stylized color halftoning.
+                            </p>
+                            <a href="https://jeffreycollins0.itch.io/dashteroids"><button>View on Itch</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="game_banner">
+                    <!-- [Hero image banner] -->
+                    <span style="height:30vh"></span>
+                    <div class="game_row_responsive">
+                        <div class="preview_gif_container">
+                            <img class="preview_gif" src="./image/TeccocryptDemo.gif" alt="GIF Preview">
+                        </div>
+                        <div class="list_responsive">
+                            <h2>Teccocrypt</h2>
+                            <p>
+                                A 3D, grid-based dungeon crawler. Uses PBR textures for materials lighting.
+                            </p>
+                            <a href="https://github.com/Yeggnog/Unity_Games/tree/master/EuraltaCrawler"><button>View on Github</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./nav.js"></script>
+    </body>
+</html>

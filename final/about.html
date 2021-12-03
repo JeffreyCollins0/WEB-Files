@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./portfolio.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="nav_list_responsive">
+            <button id="nav_collapse" onclick="toggleMenu()"><img src="./image/PegasusLogoSVG.svg" height="42vh" alt=""></button>
+            <!-- Logo icon -->
+            <a href="./index.html"><div class="nav_item">Home</div></a>
+            <a href="./gallery.html"><div class="nav_item">Gallery</div></a>
+            <a href="./games.html"><div class="nav_item">Games</div></a>
+            <div class="nav_item nav_item_selected">About</div>
+        </nav>
+        <!-- Page content -->
+        <div id="main_content" class="list_responsive">
+            <h1 class="page_header"><img src="./image/AboutText.svg" height="50vh" alt="About Me"></h1>
+            <div class="row_responsive">
+                <img class="img_responsive" src="./image/NeoPFP_S.jpg" alt="Profile photo">
+                <div id="intro">
+                    <p>I make video games and art.</p>
+                    <p>I am currently studying Computer Science and Creative Technology and Design at the University of Colorado Boulder. With over nine years of experience in solo game development, mainly in GameMaker Studio and Unity, I hope to gain employment in the video game industry after graduation.</p>
+                    <p>Additionally, I make digital drawings and pixel art in Krita and GIMP.</p>
+                </div>
+            </div>
+            <div class="row_responsive">
+                <div class="list_responsive" id="skills_list">
+                    <h2>Skills</h2>
+                    <h4>Technical / Design Skills</h4>
+                    <ul>
+                        <li>Software Development, Web Design / Development</li>
+                        <li>Graphic Design(raster / vector), Digital Art / Illustration</li>
+                        <li>Digital Image Manipulation, Logo Design, 3D Modeling(low / mid-poly)</li>
+                    </ul>
+                    <h4>Language / Framework Fluencies</h4>
+                    <ul>
+                        <li>Java, C, C#, C++, Python</li>
+                        <li>HTML, CSS, Javascript, Node.js, PHP</li>
+                        <li>Android Studio, MySQL, PostgreSQL</li>
+                        <li>Agile development</li>
+                    </ul>
+                    <h4>Tool Proficiencies</h4>
+                    <ul>
+                        <li>Adobe Photoshop, Illustrator, InDesign, Lightroom</li>
+                        <li>Blender, GIMP, Krita, Unity, GameMaker Studio(v1.4x, v2)</li>
+                        <li>Visual Studio, Eclipse, IntelliJ</li>
+                    </ul>
+                </div>
+                <div class="list_responsive">
+                    <a class="link_spaced" href="https://github.com/Yeggnog"><button>Github (Yeggnog)</button></a>
+                    <a class="link_spaced" href="https://jeffreycollins0.itch.io/"><button>Itch (Yeggnog)</button></a>
+                </div>
+            </div>
+        </div>
+        <script src="./nav.js"></script>
+    </body>
+</html>

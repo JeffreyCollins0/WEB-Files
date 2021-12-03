@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gallery</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./portfolio.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="nav_list_responsive">
+            <button id="nav_collapse" onclick="toggleMenu()"><img src="./image/PegasusLogoSVG.svg" height="42vh" alt=""></button>
+            <!-- Logo icon -->
+            <a href="./index.html"><div class="nav_item">Home</div></a>
+            <div class="nav_item nav_item_selected">Gallery</div>
+            <a href="./games.html"><div class="nav_item">Games</div></a>
+            <a href="./about.html"><div class="nav_item">About</div></a>
+        </nav>
+        <!-- Page content -->
+        <div id="main_content" class="list_responsive">
+            <h1 class="page_header"><img src="./image/GalleryText.svg" height="50vh" alt="Gallery"></h1>
+            <div id="full_view_modal">
+                <div class="modal_shadow"></div>
+                <div id="full_view_container">
+                    <button id="modal_close" onclick="closeModal()"><img src="./image/CloseIcon.svg" alt=""></button>
+                    <div id="full_view_interact"></div>
+                    <img id="full_view_img" src="./image/Circle_img.PNG" alt="full view">
+                </div>
+            </div>
+            <div id="gallery_grid">
+                <div class="gallery_item">
+                    <button class="gallery_zoom" value="./image/ChibiModelX.png" onclick="fullView(this.value)">
+                        <img src="./image/ZoomIcon.svg" alt="">
+                    </button>
+                    <img class="img_gallery" src="./image/ChibiModelX.png" alt="Gallery Image 1">
+                </div>
+                <div class="gallery_item">
+                    <button class="gallery_zoom" value="./image/ModelZFlt_A.jpg" onclick="fullView(this.value)">
+                        <img src="./image/ZoomIcon.svg" alt="">
+                    </button>
+                    <img class="img_gallery" src="./image/ModelZFlt_A.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery_item">
+                    <button class="gallery_zoom" value="./image/MorganFlt.jpg" onclick="fullView(this.value)">
+                        <img src="./image/ZoomIcon.svg" alt="">
+                    </button>
+                    <img class="img_gallery" src="./image/MorganFlt.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery_item">
+                    <button class="gallery_zoom" value="./image/Artoria_Sketch_Touchup.jpg" onclick="fullView(this.value)">
+                        <img src="./image/ZoomIcon.svg" alt="">
+                    </button>
+                    <img class="img_gallery" src="./image/Artoria_Sketch_Touchup.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery_item">
+                    <button class="gallery_zoom" value="./image/Morgan_Sketch_Touchup.jpg" onclick="fullView(this.value)">
+                        <img src="./image/ZoomIcon.svg" alt="">
+                    </button>
+                    <img class="img_gallery" src="./image/Morgan_Sketch_Touchup.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery_item">
+                    <button class="gallery_zoom" value="./image/Galehaut_Sketch_Touchup.jpg" onclick="fullView(this.value)">
+                        <img src="./image/ZoomIcon.svg" alt="">
+                    </button>
+                    <img class="img_gallery" src="./image/Galehaut_Sketch_Touchup.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery_item">
+                    <button class="gallery_zoom" value="./image/Henpo.jpg" onclick="fullView(this.value)">
+                        <img src="./image/ZoomIcon.svg" alt="">
+                    </button>
+                    <img class="img_gallery" src="./image/Henpo.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery_item">
+                    <button class="gallery_zoom" value="./image/ArtyAndSif.jpg" onclick="fullView(this.value)">
+                        <img src="./image/ZoomIcon.svg" alt="">
+                    </button>
+                    <img class="img_gallery" src="./image/ArtyAndSif.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery_item">
+                    <button class="gallery_zoom" value="./image/PegasusRedo_2.jpg" onclick="fullView(this.value)">
+                        <img src="./image/ZoomIcon.svg" alt="">
+                    </button>
+                    <img class="img_gallery" src="./image/PegasusRedo_2.jpg" alt="Gallery Image 2">
+                </div>
+            </div>
+        </div>
+        <script src="./nav.js"></script>
+        <script src="./gallery.js"></script>
+    </body>
+</html>
