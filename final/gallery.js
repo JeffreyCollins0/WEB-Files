@@ -23,7 +23,7 @@ document.getElementById("full_view_interact").addEventListener("mouseleave", eve
 document.getElementById("full_view_interact").addEventListener("mousemove", event => { 
     if(mouse_down){
         // update slider value
-        var x_offset = (0.02) * (stored_mouse_x - event.offsetX);
+        var x_offset = (0.02) * (event.offsetX - stored_mouse_x);
         var y_offset = (0.02) * (stored_mouse_y - event.offsetY);
         offsetx += x_offset;
         offsety += y_offset;
