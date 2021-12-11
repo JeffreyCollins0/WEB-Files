@@ -53,13 +53,6 @@ h4{
     align-self: center;
     margin-left: 8px;
 }
-.banner_shadow{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 80vw;
-    height: inherit;
-    transition: background-color 0.3s;
-}
 .banner_shadow:hover{
     background-color: rgba(0, 0, 0, 0);
 }
@@ -107,6 +100,14 @@ h4{
         width: max-content;
         align-self: left;
         flex-grow: 2;
+    }
+
+    .banner_shadow{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 80vw;
+        height: inherit;
+        transition: background-color 0.3s;
     }
     
     .game_banner{
@@ -281,6 +282,14 @@ h4{
         object-fit: contain;
         width: 100%;
         align-self: center;
+    }
+
+    .banner_shadow{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: inherit;
+        height: inherit;
+        transition: background-color 0.3s;
     }
 
     .game_banner{
