@@ -72,6 +72,18 @@ h4{
 .page_header{
     text-align: center;
 }
+.link_button{
+    padding: 8px;
+    background-color: #003287;
+    color: #0092EF;
+    width: max-content;
+    font-weight: 700;
+    font-size: large;
+}
+.link_button:hover{
+    background-color: #0092EF;
+    color: #FFFFFF;
+}
 
 @media screen and (min-width: 700px) {
     body{
